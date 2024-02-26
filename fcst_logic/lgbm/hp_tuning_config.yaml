@@ -1,0 +1,36 @@
+# Basics
+base_dir: "C:/Users/tobwalke/OneDrive - DPDHL/Documents/Prognose_Krankenstand/data"
+target_column: "ABS_SICK_LEAVES"
+# Filenames
+filename_base_data: "stammdaten"
+filename_sick_leave: "krankenstand"
+filename_holidays_36: "feiertage_36"
+filename_backlog: "backlog"
+filename_parcel_amount: "parcel_amount"
+filename_rescaling: "rescale_parameters"
+# Time horizon
+start_date: "2019-08-01"
+end_date: "2023-11-30"
+# CV steps
+horizons: 12
+number_cv_splits: 4
+# Clustering
+perform_clustering: False
+threshold_for_small_stations: 10
+relevant_weeks: 26
+n_jobs: 10
+# Feature engineering
+target_lags: [1,2,3]
+encoding_lags: [1]
+op_lags: [1,2,3]
+# Rescaling
+rescaling_quantiles: [25, 75]
+# Dimensionality reduction
+peform_dimensionality_reduction: False
+threshold_encodings: 0.95
+threshold_robust: 0.90
+# Hyperparameter-tuning
+n_estimators: [50, 100]
+learning_rate: [0.1]
+max_depth: [7]
+num_leaves: [30]
