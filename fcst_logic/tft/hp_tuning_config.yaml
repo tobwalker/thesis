@@ -1,5 +1,5 @@
 # Basics
-base_dir: "C:/Users/tobwalke/OneDrive - DPDHL/Documents/Prognose_Krankenstand/data"
+base_dir: "base_dir/"
 target_column: "ABS_SICK_LEAVES"
 # Filenames
 filename_base_data: "stammdaten"
